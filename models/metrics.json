@@ -1,0 +1,53 @@
+{
+  "logistic_regression": {
+    "accuracy": 0.822429906542056,
+    "precision": 0.6064814814814815,
+    "recall": 0.7318435754189944,
+    "f1": 0.6632911392405063,
+    "roc_auc": 0.8678133882191513,
+    "average_precision": 0.6586068022885466,
+    "confusion_matrix": [
+      [
+        485,
+        85
+      ],
+      [
+        48,
+        131
+      ]
+    ],
+    "classification_report": "              precision    recall  f1-score   support\n\n           0       0.91      0.85      0.88       570\n           1       0.61      0.73      0.66       179\n\n    accuracy                           0.82       749\n   macro avg       0.76      0.79      0.77       749\nweighted avg       0.84      0.82      0.83       749\n",
+    "best_params": {
+      "model__C": 10.0
+    },
+    "cv_roc_auc": 0.88515673822354
+  },
+  "random_forest": {
+    "accuracy": 0.9773030707610146,
+    "precision": 0.9655172413793104,
+    "recall": 0.9385474860335196,
+    "f1": 0.9518413597733711,
+    "roc_auc": 0.9984955405272959,
+    "average_precision": 0.9953103111643989,
+    "confusion_matrix": [
+      [
+        564,
+        6
+      ],
+      [
+        11,
+        168
+      ]
+    ],
+    "classification_report": "              precision    recall  f1-score   support\n\n           0       0.98      0.99      0.99       570\n           1       0.97      0.94      0.95       179\n\n    accuracy                           0.98       749\n   macro avg       0.97      0.96      0.97       749\nweighted avg       0.98      0.98      0.98       749\n",
+    "best_params": {
+      "model__max_depth": null,
+      "model__min_samples_leaf": 1,
+      "model__n_estimators": 400
+    },
+    "cv_roc_auc": 0.9969864160805455
+  },
+  "best_model": "random_forest",
+  "n_customers": 3742,
+  "target_rate": 0.23944414751469803
+}
